@@ -1,0 +1,46 @@
+<head>
+  <title>BP Hub</title>
+</head>
+
+<body>
+	{{> navigation_bar}}
+	{{> nav_list}}
+	{{> carousel}}
+  	{{> hello}}
+  	{{> bpdata}}
+  	{{> footer}}
+</body>
+
+<template name="hello">
+  <h1>Welcom to BP Hub!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template name="bpdata">
+		<div border="2" class="bpdata">
+			<table class="table table-bordered table-hover">
+				<tr class="data_table_header">
+					<th>Systolic</th>
+					<th>Diastolic</th>
+					<th>Pulse Rate</th>
+					<th>Time</th>
+				</tr>
+				{{#each dataArr}}
+				<tr>
+					<td class="systolic">{{systolic}} </td>
+					<td class="diastolic">{{diastolic}} </td>
+					<td class="pulse">{{pulse}} </td>
+					<td class="time">{{year}}-{{month}}-{{day}} {{hour}}:{{minute}}</td>
+				</tr>
+				{{/each}}
+			</table>
+		</div>		
+</template>	
+
+
+
+
+
+
+
