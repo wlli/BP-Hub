@@ -3,21 +3,30 @@
 </head>
 
 <body>
-	{{> navigation_bar}}
-	{{> nav_list}}
-	{{> carousel}}
-  	{{> hello}}
-  	{{> bpdata}}
-  	{{> footer}}
+
+	<div class="main">
+		{{> navigation_bar}}	
+		{{> carousel}}
+		
+		<div id="right">
+		  	{{> hello}}
+		  	{{> bpdata}}
+		  	{{> notification}}
+	 	 </div>
+	 	 <div id="left">
+			{{> nav_list}}
+		</div>
+  	</div>
+
 </body>
 
 <template name="hello">
-  <h1>Welcom to BP Hub!</h1>
   {{greeting}}
   <input type="button" value="Click" />
 </template>
 
 <template name="bpdata">
+	<section id="bp_table">
 		<div border="2" class="bpdata">
 			<table class="table table-bordered table-hover">
 				<tr class="data_table_header">
@@ -35,7 +44,8 @@
 				</tr>
 				{{/each}}
 			</table>
-		</div>		
+		</div>	
+	</section>	
 </template>	
 
 

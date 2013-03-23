@@ -1,3 +1,13 @@
+#left{
+	position:relative;
+	margin-right:20px;
+	width: 30px:;
+}
+#right{
+	float:right;
+	position:relative;
+
+}
 
 .data_table {
 	background:grey;
@@ -81,7 +91,7 @@ table {
     -------------------------------------------------- */
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
     .carousel .container {
       position: relative;
@@ -97,14 +107,14 @@ table {
       z-index: 10;
     }
     .carousel .item {
-      height: 500px;
+      height: 300px;
     }
     .carousel img {
       position: absolute;
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 500px;
+      height: 300px;
     }
     .carousel-caption {
       background-color: transparent;
