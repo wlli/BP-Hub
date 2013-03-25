@@ -1,0 +1,43 @@
+<template name="history">
+	<section id="notification_history">
+		<div class="">
+			<h2>Message History </h2>
+			<p>(10 most recent messages)</p>
+			
+			
+			<div class="accordion" id="accordion2">
+  				<div class="accordion-group">
+				  	
+				  		{{#each showHistory}}
+				  		
+						    <div class="accordion-heading">
+						      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						        {{time}}
+						      </a>
+						    </div>
+						    <div id="collapseOne" class="accordion-body collapse in">
+						      <div class="accordion-inner">
+						        {{content}}
+						      </div>
+						    </div>
+				    	
+				    	{{/each}}
+					
+  				</div>
+			</div>
+
+		</div>
+	</section>
+</template>
+
+
+
+<!-- <table class="table table-bordered table-condensed">
+				<tr class="data_table_header">
+					<th>Message</th><th>Date</th>
+				</tr>
+				{{#each showHistory}}	
+					<tr><td>{{time}}</td></tr>
+					<tr><td class="message">{{content}}<br><br></td></tr>
+				{{/each}}
+</table> -->

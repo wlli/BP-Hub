@@ -12,6 +12,7 @@
 		  	{{> hello}}
 		  	{{> bpdata}}
 		  	{{> notification}}
+		  	{{> history}}
 	 	 </div>
 	 	 <div id="left">
 			{{> nav_list}}
@@ -21,8 +22,8 @@
 </body>
 
 <template name="hello">
-  {{greeting}}
-  <input type="button" value="Click" />
+	<h2>Blood Pressure Table</h2>
+	  <h3>{{greeting}}</h3>
 </template>
 
 <template name="bpdata">
@@ -47,6 +48,7 @@
 		</div>	
 	</section>	
 </template>	
+
 
 
 
